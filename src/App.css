@@ -36,3 +36,28 @@
     transform: rotate(360deg);
   }
 }
+
+.Profile{
+  height: 150px;
+  width: 150px;
+  border: #282c34 solid 2px;
+}
+
+.Navigation{
+  padding: 50px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+.menu-list{
+  height: 150px;
+  width: auto;
+  list-style: none;
+  display: flex;
+  justify-items: center;
+}
+.menu-list li{
+  display: inline;
+  padding: 20px;
+}
