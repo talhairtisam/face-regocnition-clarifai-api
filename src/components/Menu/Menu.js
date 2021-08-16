@@ -6,7 +6,6 @@ const Menu = () => {
         <div className="Menu">
             <ul className="menu-list">
                 <li>Log-Out</li>
-                <li>Register</li>
             </ul>
         </div>
     );

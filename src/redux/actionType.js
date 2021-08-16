@@ -1,0 +1,5 @@
+export const actionType = {
+    INSERTIMAGE: "INSERTIMAGE",
+    TOGGLELOGIN: "TOGGLELOGIN",
+    BOXVALUE: "BOXVALUE"
+}
