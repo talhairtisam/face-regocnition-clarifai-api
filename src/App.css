@@ -85,29 +85,6 @@
   display: flex;
   justify-content: center;
 }
-/* 
-.imageContainer{
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-  
-}
-
-.ImageView{
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  max-width: 500px;
-}
-
-.imageContainer{
-  margin-top: 20px;
-}
-.imageContainer > img{
-  width: 100%;
-  height: auto; 
-} */
 
 .imageContainer{
   position: absolute;
@@ -115,3 +92,30 @@
 }
 
 
+.SignIn{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.formContainer{
+  min-width: 300px;
+  padding: 50px;
+  background-color:navajowhite ;
+  border-radius: 30px;
+  padding-bottom: 85px;
+}
+
+.formContainer > form{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 275px;
+  text-align: left;
+}
+
+.formContainer > form > h2{
+  text-align: center !important;
+}
