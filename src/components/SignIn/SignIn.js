@@ -1,5 +1,5 @@
 import React,{ useState } from 'react';
-
+import {  NavLink } from 'react-router-dom';
 
 const SignIn = () => {
     const [userText,setUserText] = useState("");
@@ -13,6 +13,15 @@ const SignIn = () => {
         setUserPass(e.target.value);
     }
 
+    const onLoginButton = () => {
+        if(userText !== ""){
+            return false;
+        }
+        if(userPass !== ""){
+            return false;
+        }
+        return true;
+    }
 
     return (
         <div className="SignIn">
@@ -27,7 +36,14 @@ const SignIn = () => {
                     Password:<br />
                     <input type="password" value={userPass} onChange={passChange} placeholder="Password"/>
                 </label>
-                <input type="submit" value="Submit" />
+                    
+                <NavLink to="/app" isActive={onLoginButton}>
+                    <button>
+                        Log In
+                    </button>
+                </NavLink>
+                    
+                
             </form>
         </div>
         </div>
